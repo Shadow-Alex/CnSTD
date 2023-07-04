@@ -55,7 +55,7 @@ required = [
     'matplotlib',
     'seaborn',
     "onnx",
-    "onnxruntime",
+    "onnxruntime-gpu==1.6.0",
     "huggingface_hub",
 ]
 
