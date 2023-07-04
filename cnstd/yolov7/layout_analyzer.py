@@ -145,7 +145,7 @@ class LayoutAnalyzer(object):
             root (str or Path): 模型文件所在的根目录。
                 Linux/Mac下默认值为 `~/.cnstd`，表示模型文件所处文件夹类似 `~/.cnstd/1.2/analysis`
                 Windows下默认值为 `C:/Users/<username>/AppData/Roaming/cnstd`。
-            device (str): 'cpu', or 'gpu'; default: 'cpu'
+            device (str): '0', '1', etc.
             **kwargs ():
         """
         assert model_name in ('layout', 'mfd')
@@ -155,8 +155,6 @@ class LayoutAnalyzer(object):
         self._model_type = model_type
         self._model_backend = model_backend
 
-        if device.lower().strip() in ('cuda', 'cuda:0', 'gpu'):
-            device = '0'
         self.device = select_device(device)
 
         self._assert_and_prepare_model_files(model_fp, root)
