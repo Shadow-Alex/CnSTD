@@ -18,8 +18,7 @@ demo:
 	streamlit run cnstd/app.py
 
 package:
-	rm -rf build
-	python setup.py sdist bdist_wheel
+	pip install -e .
 
 VERSION = 1.2.3.2
 upload:

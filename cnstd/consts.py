@@ -245,7 +245,11 @@ ANALYSIS_MODELS = {
         ('yolov7_tiny', 'pytorch'): {
             'url': format_hf_hub_url('yolov7_tiny_layout-pytorch.zip'),
             'arch_yaml': Path(__file__).parent / 'yolov7' / 'yolov7-tiny-layout.yaml',
-        }
+        },
+        ('yolov7', 'pytorch'): {
+            'url': "https://huggingface.co/MrGu/yolos/blob/main/yolov7_layout-pytorch.zip",
+            'arch_yaml': Path(__file__).parent / 'yolov7' / 'yolov7-layout.yaml',
+        },
     },
     'mfd': {
         ('yolov7_tiny', 'pytorch'): {

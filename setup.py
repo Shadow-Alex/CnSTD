@@ -41,12 +41,9 @@ required = [
     'tqdm',
     'pyyaml',
     'unidecode',
-    "torch>=1.8.0",
-    "torchvision>=0.9.0",
     'numpy',
     'scipy',
     'pandas',
-    "pytorch-lightning",
     'pillow>=5.3.0',
     'opencv-python>=4.0.0',
     'shapely',
@@ -55,7 +52,6 @@ required = [
     'matplotlib',
     'seaborn',
     "onnx",
-    "onnxruntime",
     "huggingface_hub",
 ]
 
@@ -90,6 +86,7 @@ setup(
                 'cnstd/yolov7/yolov7-tiny-layout.yaml',
                 'cnstd/yolov7/yolov7-tiny-mfd.yaml',
                 'cnstd/yolov7/yolov7-mfd.yaml',
+                'cnstd/yolov7/yolov7-layout.yaml',
             ],
         )
     ],
